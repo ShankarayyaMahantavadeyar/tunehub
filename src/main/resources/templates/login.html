@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Background color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif; /* Set a common font */
+        }
+
+        form {
+            background-color: #fff; /* Form background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Submit button color */
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Submit button color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/validate" method="post">
+        <label>UserName:</label>
+        <input type="text" placeholder="Enter the UserName" name="username">
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter the Email" name="email">
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter the Password" name="password">
+
+        <input type="submit" value="LOGIN">
+    </form>
+
+</body>
+</html>
