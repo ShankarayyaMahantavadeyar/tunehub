@@ -1,5 +1,8 @@
 package com.example.demo.services;
 
+import java.util.List;
+
+import com.example.demo.entities.Song;
 import com.example.demo.entities.Users;
 
 public interface UsersService 
@@ -17,6 +20,8 @@ public interface UsersService
 	public Users getUser(String email);
 
 	public void updateUser(Users user);
+
+	
 	
 
 }
